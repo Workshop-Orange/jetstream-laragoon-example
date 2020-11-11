@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "750d0b50ab2b671781680107da5d919a",
+    "content-hash": "6a3b4197dc7398188fddfa0d709856f2",
     "packages": [
         {
             "name": "amazee/laragoon-support-libs",
@@ -215,16 +215,16 @@
         },
         {
             "name": "bryangruneberg/laragoon",
-            "version": "0.12",
+            "version": "0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bryangruneberg/laragoon.git",
-                "reference": "7a0900118bf510720373ad955e908ebf2b3ebdcf"
+                "reference": "2b0a0ea14433bbdc67676104df64d77f0547a93a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bryangruneberg/laragoon/zipball/7a0900118bf510720373ad955e908ebf2b3ebdcf",
-                "reference": "7a0900118bf510720373ad955e908ebf2b3ebdcf",
+                "url": "https://api.github.com/repos/bryangruneberg/laragoon/zipball/2b0a0ea14433bbdc67676104df64d77f0547a93a",
+                "reference": "2b0a0ea14433bbdc67676104df64d77f0547a93a",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                 "lagoon",
                 "laravel"
             ],
-            "time": "2019-12-02T15:50:21+00:00"
+            "time": "2020-11-11T00:27:39+00:00"
         },
         {
             "name": "dasprid/enum",
