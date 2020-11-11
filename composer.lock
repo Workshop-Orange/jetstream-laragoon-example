@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43d0f2a5ca6dd5615663048ae0829c46",
+    "content-hash": "750d0b50ab2b671781680107da5d919a",
     "packages": [
+        {
+            "name": "amazee/laragoon-support-libs",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AmazeeLabs/laragoon_support_libs.git",
+                "reference": "a0595d5187125770868accad5fa15faec367cd5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AmazeeLabs/laragoon_support_libs/zipball/a0595d5187125770868accad5fa15faec367cd5c",
+                "reference": "a0595d5187125770868accad5fa15faec367cd5c",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/yaml": "^3.4|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Amazee\\LaragoonSupport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Blaize Kaye",
+                    "email": "blaize.kaye@gmail.com"
+                },
+                {
+                    "name": "Bryan Gruneberg",
+                    "email": "hello@bryangruneberg.com"
+                }
+            ],
+            "description": "Access the lagoon API from PHP",
+            "keywords": [
+                "amazee",
+                "amazee.io",
+                "console",
+                "deploy",
+                "devops",
+                "docker",
+                "lagoon",
+                "laravel",
+                "php"
+            ],
+            "time": "2019-02-28T20:02:52+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.2",
@@ -158,6 +212,68 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "bryangruneberg/laragoon",
+            "version": "0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bryangruneberg/laragoon.git",
+                "reference": "7a0900118bf510720373ad955e908ebf2b3ebdcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bryangruneberg/laragoon/zipball/7a0900118bf510720373ad955e908ebf2b3ebdcf",
+                "reference": "7a0900118bf510720373ad955e908ebf2b3ebdcf",
+                "shasum": ""
+            },
+            "require": {
+                "amazee/laragoon-support-libs": "^0.1",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bryangruneberg\\Laragoon\\LaragoonServiceProvider"
+                    ],
+                    "aliases": {
+                        "Laragoon": "Bryangruneberg\\Laragoon\\LaragoonFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bryangruneberg\\Laragoon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Gruneberg",
+                    "email": "hello@bryangruneberg.com"
+                },
+                {
+                    "name": "Blaize Kaye",
+                    "email": "blaize.kaye@gmail.com"
+                }
+            ],
+            "description": "The Laragoon utility package",
+            "homepage": "https://laragoon.io",
+            "keywords": [
+                "amazee",
+                "amazee.io",
+                "console",
+                "deploy",
+                "devops",
+                "docker",
+                "lagoon",
+                "laravel"
+            ],
+            "time": "2019-12-02T15:50:21+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -4975,6 +5091,74 @@
                 }
             ],
             "time": "2020-10-27T10:11:13+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v4.4.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "543cb4dbd45ed803f08a9a65f27fb149b5dd20c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/543cb4dbd45ed803f08a9a65f27fb149b5dd20c2",
+                "reference": "543cb4dbd45ed803f08a9a65f27fb149b5dd20c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "symfony/console": "^3.4|^4.0|^5.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
